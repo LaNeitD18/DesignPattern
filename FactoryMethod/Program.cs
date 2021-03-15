@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FactoryMethod.creators;
+using FactoryMethod.products;
+using System;
 
 namespace FactoryMethod
 {
@@ -6,7 +8,15 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Factory Method!");
+            ComponentFactory componentFactory = new ButtonFactory();
+
+            IComponent button = componentFactory.create();
+            button.render();
+            //button.onClick();
+
+            componentFactory = new TextFactory();
+            IComponent text = componentFactory.create();
+            text.render();
         }
     }
 }
