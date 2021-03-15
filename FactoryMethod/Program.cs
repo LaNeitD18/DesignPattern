@@ -12,7 +12,7 @@ namespace FactoryMethod
 
             IComponent button = componentFactory.create();
             button.render();
-            //button.onClick();
+            (button as Button)?.onClick();
 
             componentFactory = new TextFactory();
             IComponent text = componentFactory.create();

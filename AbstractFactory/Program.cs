@@ -1,4 +1,5 @@
 ﻿using System;
+using AbstractFactory.factories;
 
 namespace AbstractFactory
 {
@@ -6,7 +7,17 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Abstract Factory!");
+            IAbstractFactory componentFactory = null;
+
+            // render material style button & text
+            componentFactory = new MaterialStyleFactory();
+            componentFactory.createButton().renderButton();
+            componentFactory.createText().renderText();
+
+            // render winform style button & text
+            componentFactory = new WinformStyleFactory();
+            componentFactory.createButton().renderButton();
+            componentFactory.createText().renderText();
         }
     }
 }
