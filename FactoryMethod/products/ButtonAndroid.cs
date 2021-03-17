@@ -4,15 +4,15 @@ using System.Text;
 
 namespace FactoryMethod.products
 {
-    public class Button : IComponent
+    public class ButtonAndroid : IButton
     {
         public void render()
         {
-            Console.WriteLine("I'm Button");
+            Console.WriteLine("I'm Button Android");
         }
 
         public void onClick() {
-            Console.WriteLine("Yeah you can only click me!");
+            Console.WriteLine("Click Android!");
         }
     }
 }

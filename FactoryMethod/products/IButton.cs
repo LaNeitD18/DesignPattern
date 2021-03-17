@@ -4,8 +4,9 @@ using System.Text;
 
 namespace FactoryMethod.products
 {
-    public interface IComponent
+    public interface IButton
     {
         void render();
+        void onClick();
     }
 }

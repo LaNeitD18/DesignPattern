@@ -5,11 +5,11 @@ using System.Text;
 
 namespace FactoryMethod.creators
 {
-    public class TextFactory : ComponentFactory
+    public class ButtonAndroidFactory : ButtonFactory
     {
-        public override IComponent create()
+        public override IButton create()
         {
-            return new Text();
+            return new ButtonAndroid();
         }
     }
 }

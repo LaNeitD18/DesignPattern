@@ -5,8 +5,11 @@ using System.Text;
 
 namespace FactoryMethod.creators
 {
-    public abstract class ComponentFactory
+    public class ButtonIOSFactory : ButtonFactory
     {
-        public abstract IComponent create();
+        public override IButton create()
+        {
+            return new ButtonIOS();
+        }
     }
 }

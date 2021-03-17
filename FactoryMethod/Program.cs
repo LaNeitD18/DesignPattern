@@ -8,15 +8,15 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            ComponentFactory componentFactory = new ButtonFactory();
+            ButtonFactory componentFactory = new ButtonAndroidFactory();
 
-            IComponent button = componentFactory.create();
-            button.render();
-            (button as Button)?.onClick();
+            IButton androidButton = componentFactory.create();
+            androidButton.render();
+            (androidButton as ButtonAndroid)?.onClick();
 
-            componentFactory = new TextFactory();
-            IComponent text = componentFactory.create();
-            text.render();
+            componentFactory = new ButtonIOSFactory();
+            IButton iOSButton = componentFactory.create();
+            iOSButton.render();
         }
     }
 }
