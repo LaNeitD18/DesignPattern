@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Builder
 {
-    public interface IBuilder
+    public interface IBuilder<T>
     {
-        void setId(string id);
-        void setFirstName(string firstName);
-        void setLastName(string lastName);
-        void setDayOfBirth(string day);
-        void setCurrentClass(string currentClass);
-        void setAddress(string address);
-        void setPhone(string phone);
+        T setId(string id);
+        T setFirstName(string firstName);
+        T setLastName(string lastName);
+        T setDayOfBirth(string day);
+        T setCurrentClass(string currentClass);
+        T setAddress(string address);
+        T setPhone(string phone);
 
         Student build();
     }

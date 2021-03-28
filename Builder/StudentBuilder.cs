@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Builder
 {
-    public class StudentBuilder : IBuilder
+    public class StudentBuilder : IBuilder<StudentBuilder>
     {
         private Student _student = null;
         public StudentBuilder()
@@ -26,47 +26,47 @@ namespace Builder
             return res;
         }
 
-        public void setAddress(string address)
+        public StudentBuilder setAddress(string address)
         {
             this._student.Address = address;
+            return this;
         }
 
-        public void setCurrentClass(string currentClass)
+        public StudentBuilder setCurrentClass(string currentClass)
         {
             this._student.CurrentClass = currentClass;
+            return this;
         }
 
-        public void setDayOfBirth(string day)
+        public StudentBuilder setDayOfBirth(string day)
         {
             this._student.DayOfBirth = day;
+            return this;
         }
 
-        public void setFirstName(string firstName)
+        public StudentBuilder setFirstName(string firstName)
         {
             this._student.FirstName = firstName;
+            return this;
         }
 
-        public void setId(string id)
+        public StudentBuilder setId(string id)
         {
             this._student.Id = id;
+            return this;
         }
 
-        public void setLastName(string lastName)
+        public StudentBuilder setLastName(string lastName)
         {
             this._student.LastName = lastName;
+            return this;
         }
 
-        public void setPhone(string phone)
+        public StudentBuilder setPhone(string phone)
         {
             this._student.Phone = phone;
+            return this;
         }
-
-        public void buildStudentWithName(string first, string last)
-        {
-            setFirstName(first);
-            setLastName(last);
-        }
-
         
     }
 }

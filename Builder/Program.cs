@@ -8,9 +8,10 @@ namespace Builder
         {
             StudentBuilder studentBuilder = new StudentBuilder();
 
-            studentBuilder.setFirstName("Tieens");
-            studentBuilder.setLastName("Phan");
-            studentBuilder.setPhone("090");
+            studentBuilder.setFirstName("Tieens").setLastName("Phan").setPhone("090");
+
+            //studentBuilder.setLastName("Phan");
+            //studentBuilder.setPhone("090");
 
             Student s = studentBuilder.build();
 
