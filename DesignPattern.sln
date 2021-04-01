@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{A9DD30BB-2FD5-4469-A16B-ED464C60E63F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{988F7B5E-171E-4634-B9FD-6D41D37BC742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{988F7B5E-171E-4634-B9FD-6D41D37BC742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{B7AB8DF8-DCFC-4F97-BF86-87C401D62448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{988F7B5E-171E-4634-B9FD-6D41D37BC742}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{988F7B5E-171E-4634-B9FD-6D41D37BC742}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{988F7B5E-171E-4634-B9FD-6D41D37BC742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AB8DF8-DCFC-4F97-BF86-87C401D62448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AB8DF8-DCFC-4F97-BF86-87C401D62448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AB8DF8-DCFC-4F97-BF86-87C401D62448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AB8DF8-DCFC-4F97-BF86-87C401D62448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
